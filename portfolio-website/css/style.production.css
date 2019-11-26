@@ -140,6 +140,7 @@ a:active {
 header img {
   width: 200px;
   height: 70px;
+  margin-left: 100px;
 }
 
 .page-header__item {
@@ -158,6 +159,7 @@ header img {
 
 .navigation-list {
   list-style-type: none;
+  margin-right: 100px;
 }
 
 .navigation-list li {
@@ -165,7 +167,7 @@ header img {
   margin-left: 15px;
   text-transform: uppercase;
   color: #fff;
-  font-size: undefined;
+  font-size: 22px;
 }
 
 .navigation-list__item--active {
@@ -196,6 +198,7 @@ header img {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .social_item {
@@ -380,8 +383,8 @@ width: 320px;
   color: #000;
   background-color: #F9A602;
   margin-top: 32px;
-  margin-bottom: 40px;
-  font-size: undefined;
+  margin-bottom: 50px;
+  font-size: 22px;
   border-radius: 10px;
 }
 
@@ -554,6 +557,15 @@ table td {
     margin-top: 10px;
     margin-left: 40px;
     margin-right: 40px;
+  }
+
+  header img {
+    margin-left: 0px;
+  }
+
+  .navigation-list {
+    list-style-type: none;
+    margin-right: 0px;
   }
 
   .grid {

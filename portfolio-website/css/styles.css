@@ -142,6 +142,7 @@ a:active {
 header img {
   width: var(--200-width);
   height: 70px;
+  margin-left: 100px;
 }
 
 .page-header__item {
@@ -156,6 +157,7 @@ header img {
 
 .navigation-list {
   list-style-type: none;
+  margin-right: 100px;
 }
 
 .navigation-list li {
@@ -163,7 +165,7 @@ header img {
   margin-left: var(--15-margin);
   text-transform: uppercase;
   color: var(--primary-color);
-  font-size: var(font-22);
+  font-size: var(--font-22);
 }
 
 .navigation-list__item--active {
@@ -191,6 +193,7 @@ header img {
   margin: var(--margin-center);
   flex-direction: row;
   padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .social_item {
@@ -331,8 +334,8 @@ width: var(--320-width);
   color: var(--submit-text);
   background-color: var(--contact-background);
   margin-top: 32px;
-  margin-bottom: var(--40-margin);
-  font-size: var(font-22);
+  margin-bottom: var(--50-margin);
+  font-size: var(--font-22);
   border-radius: var(--10-radius);
 }
 
@@ -446,6 +449,15 @@ table td {
     margin-top: var(--10-margin);
     margin-left: var(--40-margin);
     margin-right: var(--40-margin);
+  }
+
+  header img {
+    margin-left: 0px;
+  }
+
+  .navigation-list {
+    list-style-type: none;
+    margin-right: 0px;
   }
 
   .grid {
