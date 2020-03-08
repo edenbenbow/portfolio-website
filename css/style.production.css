@@ -137,6 +137,21 @@ a:active {
   color: #627bfb;
 }
 
+.app-image {
+  width: 75%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.card-ul {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
 /*
 ===================================
  Navigation
@@ -489,6 +504,26 @@ table td {
   padding: 15px;
 }
 
+.grid_app {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 300px;
+  grid-template-rows: 300px;
+  grid-gap: 10px;
+  margin-top: 30px;
+}
+
+.grid__app_item {
+  background-color: #ececec;
+  border-radius: 5px;
+  width: 300px;
+  padding-left: 7px;
+  padding-right: 7px;
+
+}
+
 /*
 ===================================
  Animations
@@ -616,6 +651,18 @@ table td {
     -ms-grid-column: 1;
   }
 
+  .grid_app {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: none;
+    grid-template-rows: none;
+  }
+
+  .grid_app > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
   .wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -670,12 +717,22 @@ table td {
     grid-template-columns: 1fr;
   }
 
+  .grid_app {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
   .grid__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid__app_item {
     margin-left: auto;
     margin-right: auto;
   }
@@ -736,6 +793,11 @@ table td {
   }
 
   .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  .grid__app_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
