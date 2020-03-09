@@ -150,6 +150,7 @@ a:active {
   display: inline-block;
   margin: 0px;
   padding: 0px;
+  text-align: left;
 }
 
 /*
@@ -521,7 +522,14 @@ table td {
   width: 300px;
   padding-left: 7px;
   padding-right: 7px;
+}
 
+.card-ul {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  padding-bottom: 15px;
 }
 
 /*
