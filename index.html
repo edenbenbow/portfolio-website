@@ -29,19 +29,124 @@
         </ul>
       </nav>
     </header>
-    <div class="profile">
-      <img src="img/placeholder-image.jpg" class="profile__portrait" alt="Eden portrait">
-      <h1>Hello world!</h1>
-      <p>Welcome to my portfolio site.</p>
-      <a class="button" href="work.html" aria-label="See code samples">Check out samples of my work</a><br>
-      <a class="button__secondary" href="about.html" aria-label="Visit About page">Learn more about me</a>
+
+    <div role="main" class="slide_wrapper">
+      <div class="slide_wrapper__item" id="intro">
+        <h1>Greetings!</h1>
+        <p>Welcome to my portfolio site. Please consider this a resource to learn if my background and skillset are the right fit for your project.</p>
+        <a class="button" href="work.html" aria-label="See code samples">Browse work samples</a><br>
+        <a class="button__secondary" href="about.html" aria-label="Visit About page">Learn more about my background</a>
+      </div>
+      <div class="slide_wrapper__item">
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+      </div>
+
+      <div class="slide_wrapper__item" id="slides">
+
+        <div class="display-container mySlides">
+          <a href="watchr.html" target="_self" aria-label="Learn more about the Watchr app"><img src="img/watchr.png" class="slide-image"></a>
+          <div class="display-bottomleft large container padding-16 black">
+            <p>Project: <a href="watchr.html" target="_self" aria-label="Learn more about the Watchr app">Watchr</a></p>
+            <p>Technologies used:<br>
+            MongoDB,
+            Express,
+            React,
+            React Redux,
+            Bootstrap
+            </p>
+          </div>
+        </div>
+
+        <div class="display-container mySlides">
+          <a href="meetup.html" target="_self" aria-label="Learn more about the Meetup app"><img src="img/meetup.png" class="slide-image"></a>
+          <div class="display-bottomright large container padding-16 black">
+            <p>Project: <a href="meetup.html" target="_self" aria-label="Learn more about the Meetup app">Meetup</a></p>
+            <p>Technologies used:<br>
+              React,
+              Recharts,
+              Puppeteer,
+              Lighthouse,
+              Meetup API
+            </p>
+          </div>
+        </div>
+
+        <div class="display-container mySlides">
+          <a href="chat-app.html" target="_self" aria-label="Learn more about Chat App"><img src="img/chat-app.png" class="slide-image"></a>
+          <div class="display-bottomleft large container padding-16 black">
+            <p>Project: <a href="chat-app.html" target="_self" aria-label="Learn more about Chat App">Chat App</a></p>
+            <p>Technologies used:<br>
+              React Native,
+              Expo,
+              Google Firebase,
+              Android Emulator,
+              Gifted Chat,
+              Real-time data,
+              React Native asyncStorage API
+            </p>
+          </div>
+        </div>
+
+        <div class="display-container mySlides">
+          <a href="quizzly.html" target="_self" aria-label="Learn more about the Quizzly app"><img src="img/quizzly.png" class="slide-image"></a>
+          <div class="display-topleft large container padding-16 black">
+            <p>Project: <a href="quizzly.html" target="_self" aria-label="Learn more about the Quizzly app">Quizzly</a></p>
+            <p>Technologies used:<br>
+              Angular,
+              Angular Material UI,
+              HTML
+            </p>
+          </div>
+        </div>
+
+        <div class="display-container mySlides">
+          <a href="to-do.html" target="_self" aria-label="Learn more about the To-do list app"><img src="img/todo.png" class="slide-image"></a>
+          <div class="display-topright large container padding-16 black">
+            <p>Project: <a href="to-do.html" target="_self" aria-label="Learn more about the To-do list app">To-do list</a></p>
+            <p>Technologies used:<br>
+              Vue.js,
+              Vue Material,
+              HTML
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide_wrapper__item">
+        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
     </div>
-    <footer class="page-footer">
+
+
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+    </script>
+
+    </div>
+
+
+    </div>
+    <footer class="page-footer" id="#homepage">
       <p>Let's connect:</p>
       <div role="contentinfo" class ="social-media">
-        <a href="https://www.github.com/careerfoundry" target="_blank" aria-label="Learn more about CareerFoundry on Github"><img src="img/github-logo.svg" alt="Github" class="social_item"></a>
-        <a href="https://twitter.com/careerfoundry" target="_blank" aria-label="Learn more about CareerFoundry on Twitter"><img src="img/twitter-logo.svg" alt="Twitter" class="social_item"></a>
-        <a href="https://www.linkedin.com/school/careerfoundry/" target="_blank" aria-label="Learn more about CareerFoundry on LinkedIn"><img src="img/linkedin-logo.svg" alt="LinkedIn" class="social_item"></a>
+        <a href="https://cutt.ly/IyMFTyl" target="_blank" aria-label="Learn more about my projects on Github"><img src="img/github-logo.svg" alt="Github" class="social_item"></a>
+        <a href="https://cutt.ly/UyMFEmU" target="_blank" aria-label="Learn more about my background on LinkedIn"><img src="img/linkedin-logo.svg" alt="LinkedIn" class="social_item"></a>
       </div>
     </footer>
   </body>

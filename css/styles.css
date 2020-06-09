@@ -421,6 +421,10 @@ table td {
   padding: var(--15-margin);
 }
 
+.grid__item:hover {
+  opacity: 1.0;
+}
+
 /*
 ===================================
  Animations
